@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <style>
+        body {
+            background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        }
+
+        #form {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 5%;
+        }
+    </style>
+    <div class="row">
+        <div id='form' class="col-8 col-md-4  mx-auto">
+            <h3 id="form__head" class="mb-4 ">Registration Form</h3>
+            <form id="newform" action="#" class="needs-validation" novalidate>
+
+
+                <div class="form-group p-1">
+                    <label for="username"> Username </label>
+
+                    <input type="text" class="form-control" id="username" name="username" required />
+
+                    <div class="invalid-feedback">username can`t username cannot be blank or have space</div>
+                    <div class="valid-feedback">Looks Good</div>
+
+                </div>
+                <div class="form-group p-1">
+                    <label for="email"> Email </label>
+                    <input type="email" class="form-control" name="email" id="email" required />
+                    <div id="email-validation" class="invalid-feedback">Please Check Mail again.</div>
+
+                </div>
+                <div class="form-group p-1">
+                    <label for="password"> Password </label>
+                    <input type="password" class="form-control" name="password" id="password" required />
+                    <div class="invalid-feedback">Please make sure your password contains at least (a
+                        Capital
+                        letter, a number and a
+                        special charcter).</div>
+
+
+                </div>
+                <button type="submit" class=" mt-4 d-block w-100 btn btn-primary">Submit</button>
+            </form><br>
+            <p class="text-center">Already have an account? <a href="./login.html">Sign In</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
